@@ -15,8 +15,9 @@ def countpatterninfile():
     file_handle= open(compare_file)
 
     for line in file_handle:
-        line = line.rstrip()
-        if re.findall(str_expression, line) != []:
+        #line = line.rstrip()
+        list_of_items_found = re.findall(str_expression, line)
+        if list_of_items_found != []:
             count += 1
 
     print ('mbox.txt had ' + str(count) + ' lines that matched ' + str_expression) 
