@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "^Author example 1",
+      "setup": "",
+      "run": "python grep.py",
+      "input": "^Author",
+      "output": "mbox.txt had 1798 lines that matched ^Author",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "^X- example 2",
+      "setup": "",
+      "run": "python grep.py",
+      "input": "^X-",
+      "output": "mbox.txt had 14368 lines that matched ^X-",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "java$ example 3",
+      "setup": "",
+      "run": "python grep.py",
+      "input": "java$",
+      "output": "mbox.txt had 4175 lines that matched java$",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
