@@ -5,6 +5,21 @@ import sys
 
 def countpatterninfile():
     regular_expression = input("Enter a regular expression: ")
+    
+    count = 0
+
+    str_expression= str(regular_expression)
+
+    compare_file= 'mbox-long.txt'
+
+    file_handle= open(compare_file)
+
+    for line in file_handle:
+        line = line.rstrip()
+        if re.findall(str_expression, line) != []:
+            count += 1
+
+    print (compare_file + ' had ' + str(count) + ' lines that matched ' + str_expression) 
 
 if __name__ == '__main__':
     # this is called a main method
