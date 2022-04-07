@@ -19,7 +19,7 @@ def countpatterninfile():
         if re.findall(str_expression, line) != []:
             count += 1
 
-    print (compare_file + ' had ' + str(count) + ' lines that matched ' + str_expression) 
+    print ('mbox.txt had ' + str(count) + ' lines that matched ' + str_expression) 
 
 if __name__ == '__main__':
     # this is called a main method
